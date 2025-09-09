@@ -32,3 +32,4 @@ Le site est multilingue (العربية، English, Français) et inclut des anim
   - │── styles.css # Feuille de style
   - │── script.js # Fonctionnalités et interactions
   - │── ALIOUA_Hamza.JPG # Photo de profil
+  
