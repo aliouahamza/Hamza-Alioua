@@ -261,14 +261,14 @@ function toggleTheme() {
     const body = document.body;
     const themeToggle = document.querySelector('.theme-toggle i');
     
-    if (currentTheme === 'light') {
-        body.setAttribute('data-theme', 'dark');
+    if (currentTheme === 'dark') {
+        body.setAttribute('data-theme', 'light');
         themeToggle.className = 'fas fa-sun';
-        currentTheme = 'dark';
+        currentTheme = 'light';
     } else {
         body.removeAttribute('data-theme');
         themeToggle.className = 'fas fa-moon';
-        currentTheme = 'light';
+        currentTheme = 'dark';
     }
     
     // Save preference
@@ -597,11 +597,11 @@ document.addEventListener('keydown', function(e) {
         switch(e.key) {
             case '1':
                 e.preventDefault();
-                changeLanguage('ar');
+                changeLanguage('en');
                 break;
             case '2':
                 e.preventDefault();
-                changeLanguage('en');
+                changeLanguage('ar');
                 break;
             case '3':
                 e.preventDefault();
