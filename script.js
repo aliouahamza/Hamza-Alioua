@@ -213,17 +213,17 @@ const translations = {
 };
 
 // Current language
-let currentLang = 'en';
-let currentTheme = 'dark';
+let currentLang = 'ar';
+let currentTheme = 'light';
 
 // Initialize the website
 document.addEventListener('DOMContentLoaded', function() {
     // Check for saved preferences
     const savedLang = localStorage.getItem('preferred-language') || 'ar';
-    const savedTheme = localStorage.getItem('preferred-theme') || 'dark';
+    const savedTheme = localStorage.getItem('preferred-theme') || 'light';
     
     changeLanguage(savedLang);
-    if (savedTheme === 'light') {
+    if (savedTheme === 'dark') {
         toggleTheme();
     }
 });
@@ -234,7 +234,7 @@ function changeLanguage(lang) {
     
     // Update document attributes
     document.documentElement.lang = lang;
-    document.body.dir = lang === 'en' ? 'rtl' : 'ltr';
+    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
     
     // Update all translatable elements
     document.querySelectorAll('[data-key]').forEach(element => {
