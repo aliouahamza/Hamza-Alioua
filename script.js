@@ -305,8 +305,8 @@ const translations = {
 };
 
 // Variables globales
-let currentLang = 'ar';
-let currentTheme = 'dark';
+let currentLang = 'en'; // Anglais par défaut
+let currentTheme = 'dark'; // Mode sombre par défaut
 let isLoaded = false;
 
 // =================================================================
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeApp() {
     // Récupérer les préférences sauvegardées
-    const savedLang = localStorage.getItem('preferred-language') || 'ar';
+    const savedLang = localStorage.getItem('preferred-language') || 'en';
     const savedTheme = localStorage.getItem('preferred-theme') || 'dark';
     
     // Appliquer les préférences
@@ -393,11 +393,11 @@ function toggleTheme() {
     
     if (currentTheme === 'dark') {
         body.setAttribute('data-theme', 'light');
-        if (themeToggle) themeToggle.className = 'fas fa-sun';
+        if (themeToggle) themeToggle.className = 'fas fa-moon';
         currentTheme = 'light';
     } else {
-        body.removeAttribute('data-theme');
-        if (themeToggle) themeToggle.className = 'fas fa-moon';
+        body.setAttribute('data-theme', 'dark');
+        if (themeToggle) themeToggle.className = 'fas fa-sun';
         currentTheme = 'dark';
     }
     
