@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('preferred-theme') || 'dark';
     
     changeLanguage(savedLang);
-    if (savedTheme === 'ligh') {
+    if (savedTheme === 'light') {
         toggleTheme();
     }
 });
@@ -234,7 +234,7 @@ function changeLanguage(lang) {
     
     // Update document attributes
     document.documentElement.lang = lang;
-    document.body.dir = lang === 'en' ? 'rtl' : 'ltr';
+    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
     
     // Update all translatable elements
     document.querySelectorAll('[data-key]').forEach(element => {
