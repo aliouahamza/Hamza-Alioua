@@ -27,8 +27,8 @@ Le site est multilingue (العربية، English, Français) et inclut des anim
 
 ## 📂 Structure du projet
 
-HAMZA-ALIOUA/
-│── index.html # Structure du site
-│── styles.css # Feuille de style
-│── script.js # Fonctionnalités et interactions
-│── ALIOUA_Hamza.JPG # Photo de profil
+- HAMZA-ALIOUA/
+  - │── index.html # Structure du site
+  - │── styles.css # Feuille de style
+  - │── script.js # Fonctionnalités et interactions
+  - │── ALIOUA_Hamza.JPG # Photo de profil
