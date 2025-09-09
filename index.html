@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Alioua</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/JPG" href="ALIOUA_Hamza.JPG">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua" class="logo-img">
+                <span class="logo-text" data-key="name">حمزة عليوة</span>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <select class="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-key="greeting">مرحباً، أنا حمزة عليوة</h1>
+                <p data-key="title">طالب فيزياء الطاقة العالية والفيزياء الفلكية</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-key="contact">تواصل معي</a>
+                    <a href="#about" class="btn btn-secondary" data-key="about">تعرف عليّ</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-key="about">نبذة عني</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="about-desc">طالب متخصص في فيزياء الطاقة العالية والفيزياء الفلكية وعلوم الفضاء بجامعة القاضي عياض. شغوف بالعلوم الفيزيائية الحديثة والبحث العلمي، مع خبرة في التدريس الخصوصي للفيزياء والرياضيات.</p>
+                    <div class="languages">
+                        <h3 data-key="languages">اللغات</h3>
+                        <div class="language-list">
+                            <span class="language-item" data-key="amazigh">الأمازيغية (اللغة الأم)</span>
+                            <span class="language-item" data-key="arabic">العربية</span>
+                            <span class="language-item" data-key="english">الإنجليزية</span>
+                            <span class="language-item" data-key="french">الفرنسية</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1636819488524-1f019c4e1c44?w=500&h=600&fit=crop" alt="Physics Study">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 data-key="education">التعليم</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - الآن</div>
+                    <div class="timeline-content">
+                        <h3 data-key="master-title">ماستر في فيزياء الطاقة العالية والفيزياء الفلكية وعلوم الفضاء</h3>
+                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                        <p data-key="master-year">السنة الثانية - متفوق (الأول في الدفعة في السنة الأولى)</p>
+                        <button class="master-details-btn" onclick="toggleMasterDetails()" data-key="show-details">إظهار المقررات</button>
+                        <div class="master-details" id="masterDetails">
+                            <div class="master-modules">
+                                <div class="semester">
+                                    <h4 data-key="semester1">الفصل الأول</h4>
+                                    <div class="modules-grid">
+                                        <div class="module" data-key="quantum-mechanics">الميكانيك الكمي المتقدم</div>
+                                        <div class="module" data-key="relativity">النسبية العامة والكوسمولوجيا</div>
+                                        <div class="module" data-key="programming">البرمجة والفيزياء الحاسوبية</div>
+                                        <div class="module" data-key="imaging">التصوير ومعالجة الإشارة البصرية</div>
+                                        <div class="module" data-key="statistics">الطرق الإحصائية ومعالجة البيانات</div>
+                                        <div class="module" data-key="soft-skills">المهارات الناعمة</div>
+                                    </div>
+                                </div>
+                                <div class="semester">
+                                    <h4 data-key="semester2">الفصل الثاني</h4>
+                                    <div class="modules-grid">
+                                        <div class="module" data-key="astrophysics">الفيزياء الفلكية</div>
+                                        <div class="module" data-key="quantum-field">نظرية المجال الكمي</div>
+                                        <div class="module" data-key="stellar">الفيزياء النجمية</div>
+                                        <div class="module" data-key="astronomy">علم الفلك والمراجع الجغرافية</div>
+                                        <div class="module" data-key="ai-ml">الذكاء الاصطناعي والتعلم الآلي للفيزياء الفلكية</div>
+                                        <div class="module" data-key="digital-culture">الثقافة الرقمية</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-key="license-title">إجازة الدراسات الأساسية - علوم المادة الفيزيائية</h3>
+                        <p data-key="license-option">تخصص: الفيزياء الحديثة</p>
+                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3 data-key="deug-title">دبلوم الدراسات الجامعية العامة - علوم المادة الفيزيائية</h3>
+                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3 data-key="bac-title">شهادة البكالوريا</h3>
+                        <p data-key="bac-branch">شعبة العلوم التجريبية - المسلك الدولي للعلوم الفيزيائية (خيار فرنسية)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 data-key="skills">المهارات</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=100&h=100&fit=crop" alt="Physics">
+                    </div>
+                    <h3 data-key="physics-skills">الفيزياء النظرية</h3>
+                    <ul>
+                        <li data-key="quantum-physics">الفيزياء الكمية</li>
+                        <li data-key="nuclear-physics">الفيزياء النووية</li>
+                        <li data-key="theoretical-physics">الفيزياء النظرية</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=100&h=100&fit=crop" alt="Astrophysics">
+                    </div>
+                    <h3 data-key="astro-skills">علم الفلك والفضاء</h3>
+                    <ul>
+                        <li data-key="high-energy">فيزياء الطاقة العالية</li>
+                        <li data-key="space-science">علوم الفضاء</li>
+                        <li data-key="cosmology">الكوسمولوجيا</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=100&h=100&fit=crop" alt="Programming">
+                    </div>
+                    <h3 data-key="programming-skills">البرمجة والحاسوب</h3>
+                    <ul>
+                        <li data-key="computational-physics">الفيزياء الحاسوبية</li>
+                        <li data-key="data-analysis">تحليل البيانات</li>
+                        <li data-key="simulation">المحاكاة العلمية</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=100&h=100&fit=crop" alt="Teaching">
+                    </div>
+                    <h3 data-key="teaching-skills">التدريس والتكوين</h3>
+                    <ul>
+                        <li data-key="physics-teaching">تدريس الفيزياء</li>
+                        <li data-key="math-teaching">تدريس الرياضيات</li>
+                        <li data-key="tutoring">الدعم التربوي</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 data-key="experience">الخبرة العملية</h2>
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="Teaching">
+                </div>
+                <div class="experience-content">
+                    <h3 data-key="tutor-title">أستاذ الدعم التربوي</h3>
+                    <p data-key="tutor-subjects">المواد: الفيزياء والرياضيات</p>
+                    <p data-key="tutor-type">عمل حر - تدريس خصوصي</p>
+                    <p data-key="tutor-desc">تقديم دروس الدعم والتقوية للطلاب في مادتي الفيزياء والرياضيات لمختلف المستويات الدراسية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-key="contact">تواصل معي</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-key="get-in-touch">ابق على تواصل</h3>
+                    <p data-key="contact-desc">لا تتردد في التواصل معي للمناقشات الأكاديمية أو الفرص المهنية</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span data-key="phone">الهاتف</span>
+                            <p>0635152662</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span data-key="whatsapp">واتساب</span>
+                            <p>0625212608</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span data-key="academic-email">البريد الأكاديمي</span>
+                            <p>h.alioua2282@uca.ac.ma</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span data-key="personal-email">البريد الشخصي</span>
+                            <p>aliouahamza2002@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3 data-key="social-media">وسائل التواصل الاجتماعي</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1RYwWi7B1U/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/hamzalioua?igsh=MW9sOHlnOXA1YjJnOA==" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.youtube.com/@%D8%AB%D9%82%D8%A7%D9%81%D8%A9-77" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://wa.me/212625212608" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-key="footer">&copy; 2024 حمزة عليوة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
