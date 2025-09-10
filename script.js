@@ -112,7 +112,13 @@ const translations = {
         'quick-links': 'روابط سريعة',
         'contact-info': 'معلومات التواصل',
         'footer-copyright': '&copy; 2024 حمزة عليوة. جميع الحقوق محفوظة.',
-        'loading': 'جاري التحميل...'
+        'loading': 'جاري التحميل...',
+        'view-education': 'التعليم والمهارات',
+        'nav-education': 'التعليم',
+        'nav-skills': 'المهارات', 
+        'nav-experience': 'الخبرة',
+        'search-placeholder': 'البحث في المهارات...',
+        'location': 'مراكش، المغرب',
     },
     
     en: {
@@ -206,7 +212,13 @@ const translations = {
         'quick-links': 'Quick Links',
         'contact-info': 'Contact Information',
         'footer-copyright': '&copy; 2024 Hamza Alioua. All rights reserved.',
-        'loading': 'Loading...'
+        'loading': 'Loading...',
+        'view-education': 'Education & Skills',
+        'nav-education': 'Education',
+        'nav-skills': 'Skills',
+        'nav-experience': 'Experience',
+        'search-placeholder': 'Search skills...',
+        'location': 'Marrakech, Morocco',
     },
     
     fr: {
@@ -300,7 +312,13 @@ const translations = {
         'quick-links': 'Liens Rapides',
         'contact-info': 'Informations de Contact',
         'footer-copyright': '&copy; 2024 Hamza Alioua. Tous droits réservés.',
-        'loading': 'Chargement...'
+        'loading': 'Chargement...',
+        'view-education': 'Formation et Compétences',
+        'nav-education': 'Formation',
+        'nav-skills': 'Compétences',
+        'nav-experience': 'Expérience',
+        'search-placeholder': 'Rechercher des compétences...',
+        'location': 'Marrakech, Maroc',
     }
 };
 
@@ -369,6 +387,12 @@ function changeLanguage(lang) {
     const languageSelector = document.querySelector('.language-selector');
     if (languageSelector) {
         languageSelector.value = lang;
+    }
+    
+    // Mettre à jour le placeholder de recherche
+    const searchInput = document.getElementById('skillSearch');
+    if (searchInput) {
+        searchInput.placeholder = translations[lang]['search-placeholder'] || 'Search...';
     }
     
     // Sauvegarder la préférence

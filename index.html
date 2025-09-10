@@ -27,8 +27,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua" class="logo-img">
-                <span class="logo-text" data-key="name">حمزة عليوة</span>
+                <a href="#" onclick="scrollToTop(); return false;" class="logo-link">
+                    <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua" class="logo-img">
+                    <span class="logo-text" data-key="name">Hamza Alioua</span>
+                </a>
             </div>
             <div class="nav-controls">
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -47,12 +49,14 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 data-key="greeting">مرحباً، أنا حمزة عليوة</h1>
-                <p data-key="title">طالب فيزياء الطاقة العالية والفيزياء الفلكية</p>
+                <h1 data-key="greeting">Hello, I am Hamza Alioua</h1>
+                <p data-key="title">High Energy Physics and Astrophysics Student</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary" data-key="contact">تواصل معي</a>
-                    <a href="#about" class="btn btn-secondary" data-key="about">تعرف عليّ</a>
-                    <button class="btn btn-outline" onclick="downloadCV()" data-key="download-cv">تحميل السيرة الذاتية</button>
+                    <a href="#contact" class="btn btn-primary" data-key="contact">Contact Me</a>
+                    <a href="#about" class="btn btn-secondary" data-key="about">About Me</a>
+                    <a href="#education" class="btn btn-outline" data-key="education">Education</a>
+                    <a href="#skills" class="btn btn-outline" data-key="skills">Skills & Expertise</a>
+                    <a href="#experience" class="btn btn-outline" data-key="experience">Work Experience</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -171,8 +175,8 @@
                                                 <span data-key="stellar">الفيزياء النجمية</span>
                                             </div>
                                             <div class="module completed">
-                                                <i class="fas fa-telescope"></i>
-                                                <span data-key="astronomy">علم الفلك</span>
+                                                <i class="fas fa-star-crescent"></i>
+                                                <span data-key="astronomy">Astronomy</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-brain"></i>
@@ -189,7 +193,7 @@
                                     <div class="progress-bar">
                                         <div class="progress-fill" style="width: 60%"></div>
                                     </div>
-                                    <span>60% مكتمل</span>
+                                    <span>10%</span>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +245,7 @@
             
             <!-- Search Box -->
             <div class="search-container">
-                <input type="text" id="skillSearch" placeholder="البحث في المهارات..." data-key="search-placeholder">
+                <input type="text" id="skillSearch" placeholder="Search skills..." data-key="search-placeholder">
                 <i class="fas fa-search"></i>
             </div>
             
@@ -545,7 +549,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <img src="assets/images/ALIOUA_Hamza.jpg" alt="Hamza Alioua">
+                        <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
                         <span data-key="name">حمزة عليوة</span>
                     </div>
                     <p data-key="footer-desc">طالب فيزياء الطاقة العالية والفيزياء الفلكية</p>
@@ -567,7 +571,7 @@
                         <ul>
                             <li><i class="fas fa-envelope"></i> h.alioua2282@uca.ac.ma</li>
                             <li><i class="fas fa-phone"></i> 0635152662</li>
-                            <li><i class="fas fa-map-marker-alt"></i> مراكش، المغرب</li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span data-key="location">Marrakech, Morocco</span></li>
                         </ul>
                     </div>
                 </div>

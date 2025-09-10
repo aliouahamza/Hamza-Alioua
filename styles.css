@@ -1624,6 +1624,35 @@ section h2::after {
     }
 }
 
+/* Correction pour mobile - écriture masquée */
+@media (max-width: 768px) {
+    .hero-text {
+        z-index: 10;
+        position: relative;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(5px);
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .hero-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
 /* =================================================================
    RTL Support
 ================================================================= */
@@ -1774,4 +1803,45 @@ a:focus {
 
 .skip-link:focus {
     top: 6px;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        justify-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        min-width: 120px;
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    .hero-buttons .btn:first-child {
+        grid-column: 1 / -1;
+        max-width: 250px;
+    }
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo-link:hover {
+    transform: scale(1.02);
+}
+
+.logo-link:hover .logo-img {
+    border-color: var(--accent-color);
+}
+
+.logo-link:hover .logo-text {
+    color: var(--accent-color);
 }
