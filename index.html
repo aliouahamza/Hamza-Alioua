@@ -1,41 +1,70 @@
 <!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
 <html lang="en" dir="ltr">
+<!-- Élément racine avec langue par défaut (anglais) et direction gauche-à-droite -->
+
 <head>
+    <!-- Section d'en-tête contenant les métadonnées -->
+    
+    <!-- Encodage des caractères UTF-8 pour support international -->
     <meta charset="UTF-8">
+    
+    <!-- Configuration du viewport pour design responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
     <title>Hamza Alioua - Portfolio</title>
-    <meta name="description" content="Hamza Alioua - Étudiant en Physique des Hautes Énergies, Astrophysique et Sciences de l'Espace">
+    
+    <!-- Description pour les moteurs de recherche (SEO) -->
+    <meta name="description" content="Hamza Alioua - High Energy Physics, Astrophysics and Space Sciences Student">
+    
+    <!-- Mots-clés pour le référencement SEO -->
     <meta name="keywords" content="Hamza Alioua, Physics, Astrophysics, High Energy Physics, Portfolio">
     
-    <!-- Favicon -->
+    <!-- Icône du site (favicon) affiché dans l'onglet -->
     <link rel="icon" type="image/jpg" href="ALIOUA_Hamza.JPG">
     
-    <!-- Styles -->
+    <!-- Lien vers la feuille de style CSS principale -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Fonts -->
+    <!-- Importation des polices Google Fonts : Poppins (latine) et Amiri (arabe) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
+    <!-- Importation de Font Awesome pour les icônes -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body data-theme="dark">
-    <!-- Particles Background -->
+    <!-- Corps du document avec thème sombre par défaut -->
+    
+    <!-- Container des particules d'arrière-plan (géré par particles.js) -->
     <div id="particles-js"></div>
     
-    <!-- Navigation -->
+    <!-- ===== NAVIGATION PRINCIPALE ===== -->
     <nav class="navbar">
+        <!-- Barre de navigation fixe en haut -->
         <div class="nav-container">
+            <!-- Container pour centrer et organiser les éléments de navigation -->
+            
+            <!-- Section logo (image + texte) -->
             <div class="nav-logo">
+                <!-- Lien sur le logo pour retourner en haut -->
                 <a href="#" onclick="scrollToTop(); return false;" class="logo-link">
+                    <!-- Image du logo -->
                     <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua" class="logo-img">
+                    <!-- Texte du nom (traduisible via data-key) -->
                     <span class="logo-text" data-key="name">Hamza Alioua</span>
                 </a>
             </div>
+            
+            <!-- Section contrôles (thème + langue) -->
             <div class="nav-controls">
+                <!-- Bouton de basculement de thème clair/sombre -->
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
+                
+                <!-- Sélecteur de langue -->
                 <select class="language-selector" onchange="changeLanguage(this.value)" aria-label="Select language">
                     <option value="en" selected>English</option>
                     <option value="ar">العربية</option>
@@ -45,27 +74,46 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== SECTION HERO (ACCUEIL) ===== -->
     <section class="hero">
+        <!-- Section principale d'accueil en plein écran -->
         <div class="hero-content">
+            <!-- Container principal du contenu hero -->
+            
+            <!-- Section texte de présentation -->
             <div class="hero-text">
+                <!-- Titre principal avec salutation -->
                 <h1 data-key="greeting">Hello, I am Hamza Alioua</h1>
+                <!-- Sous-titre avec spécialité -->
                 <p data-key="title">High Energy Physics and Astrophysics Student</p>
+                
+                <!-- Boutons d'action principaux -->
                 <div class="hero-buttons">
+                    <!-- Bouton contact principal -->
                     <a href="#contact" class="btn btn-primary" data-key="contact">Contact Me</a>
+                    <!-- Bouton à propos -->
                     <a href="#about" class="btn btn-secondary" data-key="about">About Me</a>
+                    <!-- Bouton éducation -->
                     <a href="#education" class="btn btn-outline" data-key="education">Education</a>
+                    <!-- Bouton compétences -->
                     <a href="#skills" class="btn btn-outline" data-key="skills">Skills & Expertise</a>
+                    <!-- Bouton expérience -->
                     <a href="#experience" class="btn btn-outline" data-key="experience">Work Experience</a>
                 </div>
             </div>
+            
+            <!-- Section image de profil -->
             <div class="hero-image">
                 <div class="image-wrapper">
+                    <!-- Image principale de profil -->
                     <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
+                    <!-- Overlay décoratif au survol -->
                     <div class="image-overlay"></div>
                 </div>
             </div>
         </div>
+        
+        <!-- Indicateur de scroll vers le bas -->
         <div class="scroll-indicator">
             <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
@@ -73,106 +121,145 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ===== SECTION À PROPOS ===== -->
     <section id="about" class="about">
+        <!-- Section de présentation personnelle -->
         <div class="container">
-            <h2 data-key="about">نبذة عني</h2>
+            <!-- Container principal pour centrer le contenu -->
+            
+            <!-- Titre de la section (traduisible) -->
+            <h2 data-key="about">About Me</h2>
+            
             <div class="about-content">
+                <!-- Grille de contenu à propos -->
+                
+                <!-- Colonne texte et langues -->
                 <div class="about-text">
-                    <p data-key="about-desc">طالب متخصص في فيزياء الطاقة العالية والفيزياء الفلكية وعلوم الفضاء بجامعة القاضي عياض. شغوف بالعلوم الفيزيائية الحديثة والبحث العلمي، مع خبرة في التدريس الخصوصي للفيزياء والرياضيات.</p>
+                    <!-- Description personnelle -->
+                    <p data-key="about-desc">A specialized student in high energy physics, astrophysics and space sciences at Cadi Ayyad University. Passionate about modern physical sciences and scientific research, with experience in private tutoring of physics and mathematics.</p>
+                    
+                    <!-- Section des langues parlées -->
                     <div class="languages">
-                        <h3 data-key="languages-title">اللغات</h3>
+                        <h3 data-key="languages-title">Languages</h3>
                         <div class="language-list">
+                            <!-- Liste des langues maîtrisées -->
                             <div class="language-item">
-                                <span data-key="amazigh">الأمازيغية (اللغة الأم)</span>
+                                <span data-key="amazigh">Amazigh (Native Language)</span>
                             </div>
                             <div class="language-item">
-                                <span data-key="arabic">العربية</span>
+                                <span data-key="arabic">Arabic</span>
                             </div>
                             <div class="language-item">
-                                <span data-key="english">الإنجليزية</span>
+                                <span data-key="english">English</span>
                             </div>
                             <div class="language-item">
-                                <span data-key="french">الفرنسية</span>
+                                <span data-key="french">French</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Colonne image illustrative -->
                 <div class="about-image">
+                    <!-- Image d'illustration de l'espace -->
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=700&fit=crop" alt="Space Physics" loading="lazy">
-                    <div class="image-caption" data-key="space-research">البحث الفضائي والفيزياء الفلكية</div>
+                    <!-- Légende de l'image -->
+                    <div class="image-caption" data-key="space-research">Space Research and Astrophysics</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- ===== SECTION ÉDUCATION ===== -->
     <section id="education" class="education">
+        <!-- Section du parcours éducatif -->
         <div class="container">
-            <h2 data-key="education">التعليم</h2>
+            <h2 data-key="education">Education</h2>
+            
+            <!-- Timeline chronologique des études -->
             <div class="timeline">
+                
+                <!-- ===== MASTER (2024-2025) ===== -->
                 <div class="timeline-item">
+                    <!-- Date de la formation -->
                     <div class="timeline-date">2024-2025</div>
+                    
                     <div class="timeline-content">
+                        <!-- Icône représentant l'astrophysique -->
                         <div class="timeline-icon">
                             <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=80&h=80&fit=crop" alt="Astrophysics">
                         </div>
-                        <h3 data-key="master-title">ماستر في فيزياء الطاقة العالية والفيزياء الفلكية وعلوم الفضاء</h3>
-                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                        
+                        <!-- Titre du diplôme -->
+                        <h3 data-key="master-title">Master in High Energy Physics, Astrophysics and Space Sciences</h3>
+                        <!-- Établissement -->
+                        <p data-key="university">Cadi Ayyad University - Faculty of Sciences Semlalia, Marrakech</p>
+                        
+                        <!-- Badge de distinction -->
                         <div class="achievement-badge">
                             <i class="fas fa-trophy"></i>
-                            <span data-key="first-rank">الأول في الدفعة - السنة الأولى</span>
+                            <span data-key="first-rank">First in Class - First Year</span>
                         </div>
-                        <button class="details-btn" onclick="toggleMasterDetails()" data-key="show-details">عرض المقررات الدراسية</button>
                         
+                        <!-- Bouton pour afficher/masquer les détails du cursus -->
+                        <button class="details-btn" onclick="toggleMasterDetails()" data-key="show-details">Show Curriculum</button>
+                        
+                        <!-- Détails du master (initialement cachés) -->
                         <div class="master-details" id="masterDetails">
+                            
+                            <!-- Première année (terminée) -->
                             <div class="year-section">
-                                <h4 data-key="first-year">السنة الأولى - مكتملة بامتياز</h4>
+                                <h4 data-key="first-year">First Year - Completed with Excellence</h4>
+                                
                                 <div class="semesters">
+                                    <!-- Premier semestre -->
                                     <div class="semester">
-                                        <h5 data-key="semester1">الفصل الأول</h5>
+                                        <h5 data-key="semester1">First Semester</h5>
                                         <div class="modules-grid">
+                                            <!-- Liste des modules du S1 -->
                                             <div class="module completed">
                                                 <i class="fas fa-atom"></i>
-                                                <span data-key="quantum-mechanics">الميكانيك الكمي المتقدم</span>
+                                                <span data-key="quantum-mechanics">Advanced Quantum Mechanics</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-globe"></i>
-                                                <span data-key="relativity">النسبية العامة والكوسمولوجيا</span>
+                                                <span data-key="relativity">General Relativity & Cosmology</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-code"></i>
-                                                <span data-key="programming">البرمجة والفيزياء الحاسوبية</span>
+                                                <span data-key="programming">Programming & Computational Physics</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-camera"></i>
-                                                <span data-key="imaging">التصوير ومعالجة الإشارة</span>
+                                                <span data-key="imaging">Imaging & Signal Processing</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-chart-bar"></i>
-                                                <span data-key="statistics">الطرق الإحصائية</span>
+                                                <span data-key="statistics">Statistical Methods</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-users"></i>
-                                                <span data-key="soft-skills">المهارات الناعمة</span>
+                                                <span data-key="soft-skills">Soft Skills</span>
                                             </div>
                                         </div>
                                     </div>
                                     
+                                    <!-- Deuxième semestre -->
                                     <div class="semester">
-                                        <h5 data-key="semester2">الفصل الثاني</h5>
+                                        <h5 data-key="semester2">Second Semester</h5>
                                         <div class="modules-grid">
+                                            <!-- Liste des modules du S2 -->
                                             <div class="module completed">
                                                 <i class="fas fa-star"></i>
-                                                <span data-key="astrophysics">الفيزياء الفلكية</span>
+                                                <span data-key="astrophysics">Astrophysics</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-wave-square"></i>
-                                                <span data-key="quantum-field">نظرية المجال الكمي</span>
+                                                <span data-key="quantum-field">Quantum Field Theory</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-sun"></i>
-                                                <span data-key="stellar">الفيزياء النجمية</span>
+                                                <span data-key="stellar">Stellar Physics</span>
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-star-crescent"></i>
@@ -180,15 +267,17 @@
                                             </div>
                                             <div class="module completed">
                                                 <i class="fas fa-brain"></i>
-                                                <span data-key="ai-ml">الذكاء الاصطناعي للفيزياء الفلكية</span>
+                                                <span data-key="ai-ml">AI & Machine Learning for Astrophysics</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
+                            <!-- Deuxième année (en cours) -->
                             <div class="year-section current">
-                                <h4 data-key="second-year">السنة الثانية - قيد الدراسة</h4>
+                                <h4 data-key="second-year">Second Year - In Progress</h4>
+                                <!-- Barre de progression -->
                                 <div class="progress-indicator">
                                     <div class="progress-bar">
                                         <div class="progress-fill" style="width: 60%"></div>
@@ -200,65 +289,71 @@
                     </div>
                 </div>
                 
+                <!-- ===== LICENCE (2024) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content">
                         <div class="timeline-icon">
                             <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=80&h=80&fit=crop" alt="Physics">
                         </div>
-                        <h3 data-key="license-title">إجازة الدراسات الأساسية - علوم المادة الفيزيائية</h3>
-                        <p data-key="license-option">تخصص: الفيزياء الحديثة</p>
-                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                        <h3 data-key="license-title">Bachelor of Fundamental Studies - Physical Sciences</h3>
+                        <p data-key="license-option">Specialization: Modern Physics</p>
+                        <p data-key="university">Cadi Ayyad University - Faculty of Sciences Semlalia, Marrakech</p>
                     </div>
                 </div>
 
+                <!-- ===== DEUG (2023) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content">
                         <div class="timeline-icon">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="University">
                         </div>
-                        <h3 data-key="deug-title">دبلوم الدراسات الجامعية العامة</h3>
-                        <p data-key="deug-field">علوم المادة الفيزيائية</p>
-                        <p data-key="university">جامعة القاضي عياض - كلية العلوم السملالية، مراكش</p>
+                        <h3 data-key="deug-title">Diploma of General University Studies</h3>
+                        <p data-key="deug-field">Physical Sciences</p>
+                        <p data-key="university">Cadi Ayyad University - Faculty of Sciences Semlalia, Marrakech</p>
                     </div>
                 </div>
 
+                <!-- ===== BACCALAURÉAT (2020) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2020</div>
                     <div class="timeline-content">
                         <div class="timeline-icon">
                             <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=80&h=80&fit=crop" alt="Graduation">
                         </div>
-                        <h3 data-key="bac-title">شهادة البكالوريا</h3>
-                        <p data-key="bac-branch">العلوم التجريبية - المسلك الدولي للعلوم الفيزيائية (خيار فرنسية)</p>
+                        <h3 data-key="bac-title">Baccalaureate</h3>
+                        <p data-key="bac-branch">Experimental Sciences - International Track in Physical Sciences (French Option)</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- ===== SECTION COMPÉTENCES ===== -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 data-key="skills">المهارات والخبرات</h2>
+            <h2 data-key="skills">Skills & Expertise</h2>
             
-            <!-- Search Box -->
+            <!-- Barre de recherche dans les compétences -->
             <div class="search-container">
                 <input type="text" id="skillSearch" placeholder="Search skills..." data-key="search-placeholder">
                 <i class="fas fa-search"></i>
             </div>
             
+            <!-- Grille des cartes de compétences -->
             <div class="skills-grid">
-                <!-- Programming Skills -->
+                
+                <!-- ===== CARTE PROGRAMMATION ===== -->
                 <div class="skill-card" data-category="programming">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=100&h=100&fit=crop" alt="Programming">
                         </div>
-                        <h3 data-key="programming-skills">البرمجة والحاسوب</h3>
+                        <h3 data-key="programming-skills">Programming & Computing</h3>
                     </div>
                     <div class="skill-items">
+                        <!-- Liste des langages et outils avec niveaux -->
                         <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <span>Python</span>
@@ -297,114 +392,118 @@
                     </div>
                 </div>
 
-                <!-- Mathematics Skills -->
+                <!-- ===== CARTE MATHÉMATIQUES ===== -->
                 <div class="skill-card" data-category="mathematics">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <img src="https://images.unsplash.com/photo-1635372722656-389f87a941b7?w=100&h=100&fit=crop" alt="Mathematics">
                         </div>
-                        <h3 data-key="math-skills">الرياضيات</h3>
+                        <h3 data-key="math-skills">Mathematics</h3>
                     </div>
                     <div class="skill-items">
+                        <!-- Domaines mathématiques maîtrisés -->
                         <div class="skill-item">
                             <i class="fas fa-chart-line"></i>
-                            <span data-key="analysis">التحليل الرياضي</span>
+                            <span data-key="analysis">Mathematical Analysis</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-vector-square"></i>
-                            <span data-key="linear-algebra">الجبر الخطي</span>
+                            <span data-key="linear-algebra">Linear Algebra</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-wave-square"></i>
-                            <span data-key="differential-equations">المعادلات التفاضلية</span>
+                            <span data-key="differential-equations">Differential Equations</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-chart-bar"></i>
-                            <span data-key="statistics-math">الإحصاء</span>
+                            <span data-key="statistics-math">Statistics</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Physics Skills -->
+                <!-- ===== CARTE PHYSIQUE THÉORIQUE ===== -->
                 <div class="skill-card" data-category="physics">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=100&h=100&fit=crop" alt="Physics">
                         </div>
-                        <h3 data-key="physics-skills">الفيزياء النظرية</h3>
+                        <h3 data-key="physics-skills">Theoretical Physics</h3>
                     </div>
                     <div class="skill-items">
+                        <!-- Domaines de la physique -->
                         <div class="skill-item">
                             <i class="fas fa-atom"></i>
-                            <span data-key="quantum-physics">الميكانيك الكمي</span>
+                            <span data-key="quantum-physics">Quantum Mechanics</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-globe"></i>
-                            <span data-key="relativity-physics">النسبية العامة والخاصة</span>
+                            <span data-key="relativity-physics">General & Special Relativity</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-radiation"></i>
-                            <span data-key="particle-physics">فيزياء الجسيمات</span>
+                            <span data-key="particle-physics">Particle Physics</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-nuclear"></i>
-                            <span data-key="nuclear-physics">الفيزياء النووية</span>
+                            <span data-key="nuclear-physics">Nuclear Physics</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Astrophysics Skills -->
+                <!-- ===== CARTE ASTROPHYSIQUE ===== -->
                 <div class="skill-card" data-category="astrophysics">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=100&h=100&fit=crop" alt="Astrophysics">
                         </div>
-                        <h3 data-key="astro-skills">علم الفلك والفضاء</h3>
+                        <h3 data-key="astro-skills">Astronomy & Space</h3>
                     </div>
                     <div class="skill-items">
+                        <!-- Spécialités astrophysiques -->
                         <div class="skill-item">
                             <i class="fas fa-rocket"></i>
-                            <span data-key="high-energy">فيزياء الطاقة العالية</span>
+                            <span data-key="high-energy">High Energy Physics</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-satellite"></i>
-                            <span data-key="space-science">علوم الفضاء</span>
+                            <span data-key="space-science">Space Sciences</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-expand-arrows-alt"></i>
-                            <span data-key="cosmology">الكوسمولوجيا</span>
+                            <span data-key="cosmology">Cosmology</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-star"></i>
-                            <span data-key="stellar-physics">الفيزياء النجمية</span>
+                            <span data-key="stellar-physics">Stellar Physics</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Teaching Skills -->
+                <!-- ===== CARTE ENSEIGNEMENT ===== -->
                 <div class="skill-card" data-category="teaching">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=100&h=100&fit=crop" alt="Teaching">
                         </div>
-                        <h3 data-key="teaching-skills">التدريس والتكوين</h3>
+                        <h3 data-key="teaching-skills">Teaching & Training</h3>
                     </div>
                     <div class="skill-items">
+                        <!-- Compétences pédagogiques -->
                         <div class="skill-item">
                             <i class="fas fa-atom"></i>
-                            <span data-key="physics-teaching">تدريس الفيزياء</span>
+                            <span data-key="physics-teaching">Physics Teaching</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-square-root-alt"></i>
-                            <span data-key="math-teaching">تدريس الرياضيات</span>
+                            <span data-key="math-teaching">Mathematics Teaching</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-chalkboard-teacher"></i>
-                            <span data-key="tutoring">الدعم التربوي</span>
+                            <span data-key="tutoring">Academic Support</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-presentation"></i>
-                            <span data-key="academic-support">الدعم الأكاديمي</span>
+                            <span data-key="academic-support">Academic Support</span>
                         </div>
                     </div>
                 </div>
@@ -412,29 +511,34 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- ===== SECTION EXPÉRIENCE ===== -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 data-key="experience">الخبرة العملية</h2>
+            <h2 data-key="experience">Work Experience</h2>
+            
             <div class="experience-grid">
+                <!-- Carte d'expérience professionnelle -->
                 <div class="experience-card">
                     <div class="experience-header">
                         <div class="experience-icon">
                             <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="Teaching">
                         </div>
                     </div>
+                    
                     <div class="experience-content">
-                        <h3 data-key="tutor-title">أستاذ الدعم التربوي</h3>
-                        <p class="experience-type" data-key="freelance">عمل حر - تدريس خصوصي</p>
-                        <p class="experience-subjects" data-key="tutor-subjects">المواد: الفيزياء والرياضيات</p>
-                        <p class="experience-desc" data-key="tutor-desc">تقديم دروس الدعم والتقوية للطلاب في مادتي الفيزياء والرياضيات لمختلف المستويات الدراسية، مع التركيز على فهم المفاهيم الأساسية وحل المسائل العملية.</p>
+                        <!-- Détails de l'expérience -->
+                        <h3 data-key="tutor-title">Academic Support Teacher</h3>
+                        <p class="experience-type" data-key="freelance">Freelance - Private Tutoring</p>
+                        <p class="experience-subjects" data-key="tutor-subjects">Subjects: Physics and Mathematics</p>
+                        <p class="experience-desc" data-key="tutor-desc">Providing support and reinforcement lessons for students in physics and mathematics for various academic levels, focusing on understanding fundamental concepts and solving practical problems.</p>
                         
+                        <!-- Réalisations et accomplissements -->
                         <div class="experience-achievements">
-                            <h4 data-key="achievements">الإنجازات:</h4>
+                            <h4 data-key="achievements">Achievements:</h4>
                             <ul>
-                                <li data-key="achievement1">مساعدة أكثر من 50 طالب في تحسين درجاتهم</li>
-                                <li data-key="achievement2">تطوير طرق تدريس مبتكرة للمفاهيم الفيزيائية المعقدة</li>
-                                <li data-key="achievement3">إعداد مواد تعليمية مخصصة لكل طالب</li>
+                                <li data-key="achievement1">Helped over 50 students improve their grades</li>
+                                <li data-key="achievement2">Developed innovative teaching methods for complex physics concepts</li>
+                                <li data-key="achievement3">Created customized educational materials for each student</li>
                             </ul>
                         </div>
                     </div>
@@ -443,98 +547,114 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===== SECTION CONTACT ===== -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 data-key="contact">تواصل معي</h2>
+            <h2 data-key="contact">Contact Me</h2>
+            
             <div class="contact-grid">
+                <!-- Colonne informations de contact -->
                 <div class="contact-info">
-                    <h3 data-key="get-in-touch">ابق على تواصل</h3>
-                    <p data-key="contact-desc">لا تتردد في التواصل معي للمناقشات الأكاديمية أو الفرص المهنية</p>
+                    <h3 data-key="get-in-touch">Get In Touch</h3>
+                    <p data-key="contact-desc">Feel free to contact me for academic discussions or professional opportunities</p>
                     
                     <div class="contact-methods">
+                        <!-- Méthodes de contact avec icônes -->
+                        
+                        <!-- Téléphone -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-details">
-                                <span class="contact-label" data-key="phone">الهاتف</span>
+                                <span class="contact-label" data-key="phone">Phone</span>
                                 <a href="tel:+212635152662" class="contact-value">0635152662</a>
                             </div>
                         </div>
 
+                        <!-- WhatsApp -->
                         <div class="contact-item">
                             <div class="contact-icon whatsapp">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div class="contact-details">
-                                <span class="contact-label" data-key="whatsapp">واتساب</span>
+                                <span class="contact-label" data-key="whatsapp">WhatsApp</span>
                                 <a href="https://wa.me/212625212608" target="_blank" class="contact-value">0625212608</a>
                             </div>
                         </div>
 
+                        <!-- Email académique -->
                         <div class="contact-item">
                             <div class="contact-icon academic">
                                 <i class="fas fa-university"></i>
                             </div>
                             <div class="contact-details">
-                                <span class="contact-label" data-key="academic-email">البريد الأكاديمي</span>
+                                <span class="contact-label" data-key="academic-email">Academic Email</span>
                                 <a href="mailto:h.alioua2282@uca.ac.ma" class="contact-value">h.alioua2282@uca.ac.ma</a>
                             </div>
                         </div>
 
+                        <!-- Email personnel -->
                         <div class="contact-item">
                             <div class="contact-icon personal">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-details">
-                                <span class="contact-label" data-key="personal-email">البريد الشخصي</span>
+                                <span class="contact-label" data-key="personal-email">Personal Email</span>
                                 <a href="mailto:aliouahamza2002@gmail.com" class="contact-value">aliouahamza2002@gmail.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Colonne réseaux sociaux -->
                 <div class="social-section">
-                    <h3 data-key="social-media">وسائل التواصل الاجتماعي</h3>
+                    <h3 data-key="social-media">Social Media</h3>
                     <div class="social-grid">
+                        
+                        <!-- Cartes des réseaux sociaux avec liens -->
+                        
+                        <!-- Facebook -->
                         <a href="https://www.facebook.com/share/1RYwWi7B1U/" target="_blank" class="social-card facebook">
                             <div class="social-icon">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
                             <div class="social-info">
                                 <span class="social-name">Facebook</span>
-                                <span class="social-desc" data-key="facebook-desc">تابعني على فيسبوك</span>
+                                <span class="social-desc" data-key="facebook-desc">Follow me on Facebook</span>
                             </div>
                         </a>
 
+                        <!-- Instagram -->
                         <a href="https://www.instagram.com/hamzalioua?igsh=MW9sOHlnOXA1YjJnOA==" target="_blank" class="social-card instagram">
                             <div class="social-icon">
                                 <i class="fab fa-instagram"></i>
                             </div>
                             <div class="social-info">
                                 <span class="social-name">Instagram</span>
-                                <span class="social-desc" data-key="instagram-desc">صور ومشاركات يومية</span>
+                                <span class="social-desc" data-key="instagram-desc">Daily photos and posts</span>
                             </div>
                         </a>
 
+                        <!-- YouTube -->
                         <a href="https://www.youtube.com/@%D8%AB%D9%82%D8%A7%D9%81%D8%A9-77" target="_blank" class="social-card youtube">
                             <div class="social-icon">
                                 <i class="fab fa-youtube"></i>
                             </div>
                             <div class="social-info">
                                 <span class="social-name">YouTube</span>
-                                <span class="social-desc" data-key="youtube-desc">محتوى تعليمي وثقافي</span>
+                                <span class="social-desc" data-key="youtube-desc">Educational and cultural content</span>
                             </div>
                         </a>
 
+                        <!-- WhatsApp -->
                         <a href="https://wa.me/212625212608" target="_blank" class="social-card whatsapp">
                             <div class="social-icon">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div class="social-info">
                                 <span class="social-name">WhatsApp</span>
-                                <span class="social-desc" data-key="whatsapp-desc">تواصل مباشر</span>
+                                <span class="social-desc" data-key="whatsapp-desc">Direct contact</span>
                             </div>
                         </a>
                     </div>
@@ -543,32 +663,40 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
+        <!-- Pied de page avec informations et liens -->
         <div class="container">
             <div class="footer-content">
+                <!-- Section informations personnelles -->
                 <div class="footer-info">
                     <div class="footer-logo">
+                        <!-- Logo et nom dans le footer -->
                         <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
-                        <span data-key="name">حمزة عليوة</span>
+                        <span data-key="name">Hamza Alioua</span>
                     </div>
-                    <p data-key="footer-desc">طالب فيزياء الطاقة العالية والفيزياء الفلكية</p>
+                    <!-- Description courte -->
+                    <p data-key="footer-desc">High Energy Physics and Astrophysics Student</p>
                 </div>
                 
+                <!-- Section liens rapides -->
                 <div class="footer-links">
                     <div class="footer-section">
-                        <h4 data-key="quick-links">روابط سريعة</h4>
+                        <h4 data-key="quick-links">Quick Links</h4>
                         <ul>
-                            <li><a href="#about" data-key="about">نبذة عني</a></li>
-                            <li><a href="#education" data-key="education">التعليم</a></li>
-                            <li><a href="#skills" data-key="skills">المهارات</a></li>
-                            <li><a href="#experience" data-key="experience">الخبرة</a></li>
+                            <!-- Navigation rapide vers les sections -->
+                            <li><a href="#about" data-key="about">About Me</a></li>
+                            <li><a href="#education" data-key="education">Education</a></li>
+                            <li><a href="#skills" data-key="skills">Skills</a></li>
+                            <li><a href="#experience" data-key="experience">Experience</a></li>
                         </ul>
                     </div>
                     
+                    <!-- Section informations de contact -->
                     <div class="footer-section">
-                        <h4 data-key="contact-info">معلومات التواصل</h4>
+                        <h4 data-key="contact-info">Contact Information</h4>
                         <ul>
+                            <!-- Coordonnées avec icônes -->
                             <li><i class="fas fa-envelope"></i> h.alioua2282@uca.ac.ma</li>
                             <li><i class="fas fa-phone"></i> 0635152662</li>
                             <li><i class="fas fa-map-marker-alt"></i> <span data-key="location">Marrakech, Morocco</span></li>
@@ -577,8 +705,12 @@
                 </div>
             </div>
             
+            <!-- Bas du footer avec copyright et réseaux sociaux -->
             <div class="footer-bottom">
-                <p data-key="footer-copyright">&copy; 2024 حمزة عليوة. جميع الحقوق محفوظة.</p>
+                <!-- Copyright -->
+                <p data-key="footer-copyright">&copy; 2024 Hamza Alioua. All rights reserved.</p>
+                
+                <!-- Liens vers les réseaux sociaux -->
                 <div class="footer-social">
                     <a href="https://www.facebook.com/share/1RYwWi7B1U/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -597,21 +729,62 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+    <!-- ===== BOUTON RETOUR EN HAUT ===== -->
     <button class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
+        <!-- Bouton flottant pour retourner en haut de page -->
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Loading Screen -->
+    <!-- ===== ÉCRAN DE CHARGEMENT ===== -->
     <div class="loading-screen">
+        <!-- Overlay de chargement affiché au démarrage -->
         <div class="loading-content">
+            <!-- Spinner animé -->
             <div class="loading-spinner"></div>
-            <p data-key="loading">جاري التحميل...</p>
+            <!-- Texte de chargement (traduisible) -->
+            <p data-key="loading">Loading...</p>
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- ===== SCRIPTS ===== -->
+    
+    <!-- Librairie Particles.js pour l'animation d'arrière-plan -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Script principal de l'application -->
     <script src="script.js"></script>
+    
 </body>
 </html>
+
+<!-- 
+===== RÉSUMÉ DE LA STRUCTURE HTML =====
+
+1. HEAD : Métadonnées, liens vers ressources externes (CSS, fonts, icônes)
+2. NAVIGATION : Logo + contrôles de thème et langue
+3. HERO : Section d'accueil avec présentation et boutons d'action
+4. ABOUT : Présentation personnelle et langues parlées
+5. EDUCATION : Timeline chronologique des études avec détails du master
+6. SKILLS : Cartes de compétences organisées par domaines avec barre de recherche
+7. EXPERIENCE : Expérience professionnelle en tutorat
+8. CONTACT : Méthodes de contact + réseaux sociaux
+9. FOOTER : Informations de contact et navigation rapide
+10. ÉLÉMENTS UTILITAIRES : Bouton retour haut + écran de chargement
+
+===== FONCTIONNALITÉS TECHNIQUES =====
+
+- Système de traduction via attributs data-key
+- Design responsive (mobile-first)
+- Thèmes clair/sombre
+- Support RTL pour l'arabe
+- Accessibilité (aria-labels, navigation clavier)
+- Images optimisées (lazy loading, tailles adaptatives)
+- SEO optimisé (métadonnées, structure sémantique)
+- Performance (scripts en bas, ressources CDN)
+
+===== COMPATIBILITÉ AVEC CSS/JS =====
+
+Toutes les classes, IDs et data-attributes correspondent exactement 
+aux sélecteurs définis dans les fichiers CSS et JavaScript.
+Aucune modification n'est nécessaire pour la compatibilité.
+-->
