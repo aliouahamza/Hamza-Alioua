@@ -1,70 +1,41 @@
 <!DOCTYPE html>
-<!-- Déclaration du type de document HTML5 -->
 <html lang="en" dir="ltr">
-<!-- Élément racine avec langue par défaut (anglais) et direction gauche-à-droite -->
-
 <head>
-    <!-- Section d'en-tête contenant les métadonnées -->
-    
-    <!-- Encodage des caractères UTF-8 pour support international -->
     <meta charset="UTF-8">
-    
-    <!-- Configuration du viewport pour design responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Titre de la page affiché dans l'onglet du navigateur -->
     <title>Hamza Alioua - Portfolio</title>
-    
-    <!-- Description pour les moteurs de recherche (SEO) -->
     <meta name="description" content="Hamza Alioua - High Energy Physics, Astrophysics and Space Sciences Student">
-    
-    <!-- Mots-clés pour le référencement SEO -->
     <meta name="keywords" content="Hamza Alioua, Physics, Astrophysics, High Energy Physics, Portfolio">
     
-    <!-- Icône du site (favicon) affiché dans l'onglet -->
+    <!-- Favicon -->
     <link rel="icon" type="image/jpg" href="ALIOUA_Hamza.JPG">
     
-    <!-- Lien vers la feuille de style CSS principale -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Importation des polices Google Fonts : Poppins (latine) et Amiri (arabe) -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Importation de Font Awesome pour les icônes -->
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body data-theme="dark">
-    <!-- Corps du document avec thème sombre par défaut -->
-    
-    <!-- Container des particules d'arrière-plan (géré par particles.js) -->
+    <!-- Particles Background -->
     <div id="particles-js"></div>
     
-    <!-- ===== NAVIGATION PRINCIPALE ===== -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <!-- Barre de navigation fixe en haut -->
         <div class="nav-container">
-            <!-- Container pour centrer et organiser les éléments de navigation -->
-            
-            <!-- Section logo (image + texte) -->
             <div class="nav-logo">
-                <!-- Lien sur le logo pour retourner en haut -->
                 <a href="#" onclick="scrollToTop(); return false;" class="logo-link">
-                    <!-- Image du logo -->
                     <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua" class="logo-img">
-                    <!-- Texte du nom (traduisible via data-key) -->
                     <span class="logo-text" data-key="name">Hamza Alioua</span>
                 </a>
             </div>
-            
-            <!-- Section contrôles (thème + langue) -->
             <div class="nav-controls">
-                <!-- Bouton de basculement de thème clair/sombre -->
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
-                
-                <!-- Sélecteur de langue -->
                 <select class="language-selector" onchange="changeLanguage(this.value)" aria-label="Select language">
                     <option value="en" selected>English</option>
                     <option value="ar">العربية</option>
@@ -74,46 +45,27 @@
         </div>
     </nav>
 
-    <!-- ===== SECTION HERO (ACCUEIL) ===== -->
+    <!-- Hero Section -->
     <section class="hero">
-        <!-- Section principale d'accueil en plein écran -->
         <div class="hero-content">
-            <!-- Container principal du contenu hero -->
-            
-            <!-- Section texte de présentation -->
             <div class="hero-text">
-                <!-- Titre principal avec salutation -->
                 <h1 data-key="greeting">Hello, I am Hamza Alioua</h1>
-                <!-- Sous-titre avec spécialité -->
                 <p data-key="title">High Energy Physics and Astrophysics Student</p>
-                
-                <!-- Boutons d'action principaux -->
                 <div class="hero-buttons">
-                    <!-- Bouton contact principal -->
                     <a href="#contact" class="btn btn-primary" data-key="contact">Contact Me</a>
-                    <!-- Bouton à propos -->
                     <a href="#about" class="btn btn-secondary" data-key="about">About Me</a>
-                    <!-- Bouton éducation -->
                     <a href="#education" class="btn btn-outline" data-key="education">Education</a>
-                    <!-- Bouton compétences -->
                     <a href="#skills" class="btn btn-outline" data-key="skills">Skills & Expertise</a>
-                    <!-- Bouton expérience -->
                     <a href="#experience" class="btn btn-outline" data-key="experience">Work Experience</a>
                 </div>
             </div>
-            
-            <!-- Section image de profil -->
             <div class="hero-image">
                 <div class="image-wrapper">
-                    <!-- Image principale de profil -->
                     <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
-                    <!-- Overlay décoratif au survol -->
                     <div class="image-overlay"></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Indicateur de scroll vers le bas -->
         <div class="scroll-indicator">
             <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
@@ -121,28 +73,16 @@
         </div>
     </section>
 
-    <!-- ===== SECTION À PROPOS ===== -->
+    <!-- About Section -->
     <section id="about" class="about">
-        <!-- Section de présentation personnelle -->
         <div class="container">
-            <!-- Container principal pour centrer le contenu -->
-            
-            <!-- Titre de la section (traduisible) -->
             <h2 data-key="about">About Me</h2>
-            
             <div class="about-content">
-                <!-- Grille de contenu à propos -->
-                
-                <!-- Colonne texte et langues -->
                 <div class="about-text">
-                    <!-- Description personnelle -->
                     <p data-key="about-desc">A specialized student in high energy physics, astrophysics and space sciences at Cadi Ayyad University. Passionate about modern physical sciences and scientific research, with experience in private tutoring of physics and mathematics.</p>
-                    
-                    <!-- Section des langues parlées -->
                     <div class="languages">
                         <h3 data-key="languages-title">Languages</h3>
                         <div class="language-list">
-                            <!-- Liste des langues maîtrisées -->
                             <div class="language-item">
                                 <span data-key="amazigh">Amazigh (Native Language)</span>
                             </div>
@@ -158,65 +98,40 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Colonne image illustrative -->
                 <div class="about-image">
-                    <!-- Image d'illustration de l'espace -->
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=700&fit=crop" alt="Space Physics" loading="lazy">
-                    <!-- Légende de l'image -->
                     <div class="image-caption" data-key="space-research">Space Research and Astrophysics</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION ÉDUCATION ===== -->
+    <!-- Education Section -->
     <section id="education" class="education">
-        <!-- Section du parcours éducatif -->
         <div class="container">
             <h2 data-key="education">Education</h2>
-            
-            <!-- Timeline chronologique des études -->
             <div class="timeline">
-                
-                <!-- ===== MASTER (2024-2025) ===== -->
                 <div class="timeline-item">
-                    <!-- Date de la formation -->
                     <div class="timeline-date">2024-2025</div>
-                    
                     <div class="timeline-content">
-                        <!-- Icône représentant l'astrophysique -->
                         <div class="timeline-icon">
                             <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=80&h=80&fit=crop" alt="Astrophysics">
                         </div>
-                        
-                        <!-- Titre du diplôme -->
                         <h3 data-key="master-title">Master in High Energy Physics, Astrophysics and Space Sciences</h3>
-                        <!-- Établissement -->
                         <p data-key="university">Cadi Ayyad University - Faculty of Sciences Semlalia, Marrakech</p>
-                        
-                        <!-- Badge de distinction -->
                         <div class="achievement-badge">
                             <i class="fas fa-trophy"></i>
                             <span data-key="first-rank">First in Class - First Year</span>
                         </div>
-                        
-                        <!-- Bouton pour afficher/masquer les détails du cursus -->
                         <button class="details-btn" onclick="toggleMasterDetails()" data-key="show-details">Show Curriculum</button>
                         
-                        <!-- Détails du master (initialement cachés) -->
                         <div class="master-details" id="masterDetails">
-                            
-                            <!-- Première année (terminée) -->
                             <div class="year-section">
                                 <h4 data-key="first-year">First Year - Completed with Excellence</h4>
-                                
                                 <div class="semesters">
-                                    <!-- Premier semestre -->
                                     <div class="semester">
                                         <h5 data-key="semester1">First Semester</h5>
                                         <div class="modules-grid">
-                                            <!-- Liste des modules du S1 -->
                                             <div class="module completed">
                                                 <i class="fas fa-atom"></i>
                                                 <span data-key="quantum-mechanics">Advanced Quantum Mechanics</span>
@@ -244,11 +159,9 @@
                                         </div>
                                     </div>
                                     
-                                    <!-- Deuxième semestre -->
                                     <div class="semester">
                                         <h5 data-key="semester2">Second Semester</h5>
                                         <div class="modules-grid">
-                                            <!-- Liste des modules du S2 -->
                                             <div class="module completed">
                                                 <i class="fas fa-star"></i>
                                                 <span data-key="astrophysics">Astrophysics</span>
@@ -274,10 +187,8 @@
                                 </div>
                             </div>
                             
-                            <!-- Deuxième année (en cours) -->
                             <div class="year-section current">
                                 <h4 data-key="second-year">Second Year - In Progress</h4>
-                                <!-- Barre de progression -->
                                 <div class="progress-indicator">
                                     <div class="progress-bar">
                                         <div class="progress-fill" style="width: 60%"></div>
@@ -289,7 +200,6 @@
                     </div>
                 </div>
                 
-                <!-- ===== LICENCE (2024) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content">
@@ -302,7 +212,6 @@
                     </div>
                 </div>
 
-                <!-- ===== DEUG (2023) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content">
@@ -315,7 +224,6 @@
                     </div>
                 </div>
 
-                <!-- ===== BACCALAURÉAT (2020) ===== -->
                 <div class="timeline-item">
                     <div class="timeline-date">2020</div>
                     <div class="timeline-content">
@@ -330,21 +238,19 @@
         </div>
     </section>
 
-    <!-- ===== SECTION COMPÉTENCES ===== -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 data-key="skills">Skills & Expertise</h2>
             
-            <!-- Barre de recherche dans les compétences -->
+            <!-- Search Box -->
             <div class="search-container">
                 <input type="text" id="skillSearch" placeholder="Search skills..." data-key="search-placeholder">
                 <i class="fas fa-search"></i>
             </div>
             
-            <!-- Grille des cartes de compétences -->
             <div class="skills-grid">
-                
-                <!-- ===== CARTE PROGRAMMATION ===== -->
+                <!-- Programming Skills -->
                 <div class="skill-card" data-category="programming">
                     <div class="skill-header">
                         <div class="skill-icon">
@@ -353,7 +259,6 @@
                         <h3 data-key="programming-skills">Programming & Computing</h3>
                     </div>
                     <div class="skill-items">
-                        <!-- Liste des langages et outils avec niveaux -->
                         <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <span>Python</span>
@@ -392,7 +297,7 @@
                     </div>
                 </div>
 
-                <!-- ===== CARTE MATHÉMATIQUES ===== -->
+                <!-- Mathematics Skills -->
                 <div class="skill-card" data-category="mathematics">
                     <div class="skill-header">
                         <div class="skill-icon">
@@ -401,7 +306,6 @@
                         <h3 data-key="math-skills">Mathematics</h3>
                     </div>
                     <div class="skill-items">
-                        <!-- Domaines mathématiques maîtrisés -->
                         <div class="skill-item">
                             <i class="fas fa-chart-line"></i>
                             <span data-key="analysis">Mathematical Analysis</span>
@@ -421,7 +325,7 @@
                     </div>
                 </div>
 
-                <!-- ===== CARTE PHYSIQUE THÉORIQUE ===== -->
+                <!-- Physics Skills -->
                 <div class="skill-card" data-category="physics">
                     <div class="skill-header">
                         <div class="skill-icon">
@@ -430,7 +334,6 @@
                         <h3 data-key="physics-skills">Theoretical Physics</h3>
                     </div>
                     <div class="skill-items">
-                        <!-- Domaines de la physique -->
                         <div class="skill-item">
                             <i class="fas fa-atom"></i>
                             <span data-key="quantum-physics">Quantum Mechanics</span>
@@ -450,7 +353,7 @@
                     </div>
                 </div>
 
-                <!-- ===== CARTE ASTROPHYSIQUE ===== -->
+                <!-- Astrophysics Skills -->
                 <div class="skill-card" data-category="astrophysics">
                     <div class="skill-header">
                         <div class="skill-icon">
@@ -459,7 +362,6 @@
                         <h3 data-key="astro-skills">Astronomy & Space</h3>
                     </div>
                     <div class="skill-items">
-                        <!-- Spécialités astrophysiques -->
                         <div class="skill-item">
                             <i class="fas fa-rocket"></i>
                             <span data-key="high-energy">High Energy Physics</span>
@@ -479,7 +381,7 @@
                     </div>
                 </div>
 
-                <!-- ===== CARTE ENSEIGNEMENT ===== -->
+                <!-- Teaching Skills -->
                 <div class="skill-card" data-category="teaching">
                     <div class="skill-header">
                         <div class="skill-icon">
@@ -488,7 +390,6 @@
                         <h3 data-key="teaching-skills">Teaching & Training</h3>
                     </div>
                     <div class="skill-items">
-                        <!-- Compétences pédagogiques -->
                         <div class="skill-item">
                             <i class="fas fa-atom"></i>
                             <span data-key="physics-teaching">Physics Teaching</span>
@@ -511,28 +412,23 @@
         </div>
     </section>
 
-    <!-- ===== SECTION EXPÉRIENCE ===== -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
             <h2 data-key="experience">Work Experience</h2>
-            
             <div class="experience-grid">
-                <!-- Carte d'expérience professionnelle -->
                 <div class="experience-card">
                     <div class="experience-header">
                         <div class="experience-icon">
                             <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=100&h=100&fit=crop" alt="Teaching">
                         </div>
                     </div>
-                    
                     <div class="experience-content">
-                        <!-- Détails de l'expérience -->
                         <h3 data-key="tutor-title">Academic Support Teacher</h3>
                         <p class="experience-type" data-key="freelance">Freelance - Private Tutoring</p>
                         <p class="experience-subjects" data-key="tutor-subjects">Subjects: Physics and Mathematics</p>
                         <p class="experience-desc" data-key="tutor-desc">Providing support and reinforcement lessons for students in physics and mathematics for various academic levels, focusing on understanding fundamental concepts and solving practical problems.</p>
                         
-                        <!-- Réalisations et accomplissements -->
                         <div class="experience-achievements">
                             <h4 data-key="achievements">Achievements:</h4>
                             <ul>
@@ -547,21 +443,16 @@
         </div>
     </section>
 
-    <!-- ===== SECTION CONTACT ===== -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-key="contact">Contact Me</h2>
-            
             <div class="contact-grid">
-                <!-- Colonne informations de contact -->
                 <div class="contact-info">
                     <h3 data-key="get-in-touch">Get In Touch</h3>
                     <p data-key="contact-desc">Feel free to contact me for academic discussions or professional opportunities</p>
                     
                     <div class="contact-methods">
-                        <!-- Méthodes de contact avec icônes -->
-                        
-                        <!-- Téléphone -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
@@ -572,7 +463,6 @@
                             </div>
                         </div>
 
-                        <!-- WhatsApp -->
                         <div class="contact-item">
                             <div class="contact-icon whatsapp">
                                 <i class="fab fa-whatsapp"></i>
@@ -583,7 +473,6 @@
                             </div>
                         </div>
 
-                        <!-- Email académique -->
                         <div class="contact-item">
                             <div class="contact-icon academic">
                                 <i class="fas fa-university"></i>
@@ -594,7 +483,6 @@
                             </div>
                         </div>
 
-                        <!-- Email personnel -->
                         <div class="contact-item">
                             <div class="contact-icon personal">
                                 <i class="fas fa-envelope"></i>
@@ -607,14 +495,9 @@
                     </div>
                 </div>
 
-                <!-- Colonne réseaux sociaux -->
                 <div class="social-section">
                     <h3 data-key="social-media">Social Media</h3>
                     <div class="social-grid">
-                        
-                        <!-- Cartes des réseaux sociaux avec liens -->
-                        
-                        <!-- Facebook -->
                         <a href="https://www.facebook.com/share/1RYwWi7B1U/" target="_blank" class="social-card facebook">
                             <div class="social-icon">
                                 <i class="fab fa-facebook-f"></i>
@@ -625,7 +508,6 @@
                             </div>
                         </a>
 
-                        <!-- Instagram -->
                         <a href="https://www.instagram.com/hamzalioua?igsh=MW9sOHlnOXA1YjJnOA==" target="_blank" class="social-card instagram">
                             <div class="social-icon">
                                 <i class="fab fa-instagram"></i>
@@ -636,7 +518,6 @@
                             </div>
                         </a>
 
-                        <!-- YouTube -->
                         <a href="https://www.youtube.com/@%D8%AB%D9%82%D8%A7%D9%81%D8%A9-77" target="_blank" class="social-card youtube">
                             <div class="social-icon">
                                 <i class="fab fa-youtube"></i>
@@ -647,7 +528,6 @@
                             </div>
                         </a>
 
-                        <!-- WhatsApp -->
                         <a href="https://wa.me/212625212608" target="_blank" class="social-card whatsapp">
                             <div class="social-icon">
                                 <i class="fab fa-whatsapp"></i>
@@ -663,28 +543,22 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- Footer -->
     <footer class="footer">
-        <!-- Pied de page avec informations et liens -->
         <div class="container">
             <div class="footer-content">
-                <!-- Section informations personnelles -->
                 <div class="footer-info">
                     <div class="footer-logo">
-                        <!-- Logo et nom dans le footer -->
                         <img src="ALIOUA_Hamza.JPG" alt="Hamza Alioua">
                         <span data-key="name">Hamza Alioua</span>
                     </div>
-                    <!-- Description courte -->
                     <p data-key="footer-desc">High Energy Physics and Astrophysics Student</p>
                 </div>
                 
-                <!-- Section liens rapides -->
                 <div class="footer-links">
                     <div class="footer-section">
                         <h4 data-key="quick-links">Quick Links</h4>
                         <ul>
-                            <!-- Navigation rapide vers les sections -->
                             <li><a href="#about" data-key="about">About Me</a></li>
                             <li><a href="#education" data-key="education">Education</a></li>
                             <li><a href="#skills" data-key="skills">Skills</a></li>
@@ -692,11 +566,9 @@
                         </ul>
                     </div>
                     
-                    <!-- Section informations de contact -->
                     <div class="footer-section">
                         <h4 data-key="contact-info">Contact Information</h4>
                         <ul>
-                            <!-- Coordonnées avec icônes -->
                             <li><i class="fas fa-envelope"></i> h.alioua2282@uca.ac.ma</li>
                             <li><i class="fas fa-phone"></i> 0635152662</li>
                             <li><i class="fas fa-map-marker-alt"></i> <span data-key="location">Marrakech, Morocco</span></li>
@@ -705,12 +577,8 @@
                 </div>
             </div>
             
-            <!-- Bas du footer avec copyright et réseaux sociaux -->
             <div class="footer-bottom">
-                <!-- Copyright -->
                 <p data-key="footer-copyright">&copy; 2024 Hamza Alioua. All rights reserved.</p>
-                
-                <!-- Liens vers les réseaux sociaux -->
                 <div class="footer-social">
                     <a href="https://www.facebook.com/share/1RYwWi7B1U/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -729,62 +597,21 @@
         </div>
     </footer>
 
-    <!-- ===== BOUTON RETOUR EN HAUT ===== -->
+    <!-- Back to Top Button -->
     <button class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
-        <!-- Bouton flottant pour retourner en haut de page -->
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- ===== ÉCRAN DE CHARGEMENT ===== -->
+    <!-- Loading Screen -->
     <div class="loading-screen">
-        <!-- Overlay de chargement affiché au démarrage -->
         <div class="loading-content">
-            <!-- Spinner animé -->
             <div class="loading-spinner"></div>
-            <!-- Texte de chargement (traduisible) -->
             <p data-key="loading">Loading...</p>
         </div>
     </div>
 
-    <!-- ===== SCRIPTS ===== -->
-    
-    <!-- Librairie Particles.js pour l'animation d'arrière-plan -->
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    
-    <!-- Script principal de l'application -->
     <script src="script.js"></script>
-    
 </body>
 </html>
-
-<!-- 
-===== RÉSUMÉ DE LA STRUCTURE HTML =====
-
-1. HEAD : Métadonnées, liens vers ressources externes (CSS, fonts, icônes)
-2. NAVIGATION : Logo + contrôles de thème et langue
-3. HERO : Section d'accueil avec présentation et boutons d'action
-4. ABOUT : Présentation personnelle et langues parlées
-5. EDUCATION : Timeline chronologique des études avec détails du master
-6. SKILLS : Cartes de compétences organisées par domaines avec barre de recherche
-7. EXPERIENCE : Expérience professionnelle en tutorat
-8. CONTACT : Méthodes de contact + réseaux sociaux
-9. FOOTER : Informations de contact et navigation rapide
-10. ÉLÉMENTS UTILITAIRES : Bouton retour haut + écran de chargement
-
-===== FONCTIONNALITÉS TECHNIQUES =====
-
-- Système de traduction via attributs data-key
-- Design responsive (mobile-first)
-- Thèmes clair/sombre
-- Support RTL pour l'arabe
-- Accessibilité (aria-labels, navigation clavier)
-- Images optimisées (lazy loading, tailles adaptatives)
-- SEO optimisé (métadonnées, structure sémantique)
-- Performance (scripts en bas, ressources CDN)
-
-===== COMPATIBILITÉ AVEC CSS/JS =====
-
-Toutes les classes, IDs et data-attributes correspondent exactement 
-aux sélecteurs définis dans les fichiers CSS et JavaScript.
-Aucune modification n'est nécessaire pour la compatibilité.
--->
